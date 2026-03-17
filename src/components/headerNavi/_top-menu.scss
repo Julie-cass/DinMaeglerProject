@@ -1,0 +1,37 @@
+.top_bg {
+    background-color: #162A41;
+    padding: 0.5rem;
+
+    .top_menu {
+        max-width: 1000px; 
+        margin: 0 auto; 
+        .top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        .top_item{
+            text-decoration: none;
+            list-style: none;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            ;
+        }
+        .SiMinut{
+            font-size: 20px;
+        }
+        .SiMinutkite{
+            font-size: 25px;
+        }
+
+        div {
+            display: flex;
+            gap: 1rem; 
+        }
+    }
+}

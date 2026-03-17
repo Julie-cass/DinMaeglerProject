@@ -1,0 +1,36 @@
+.info-section {
+    max-width: 27.8rem;
+
+    .info-Box {
+        max-width: 17.8rem;
+        max-height: 8.5rem;
+        text-align: center;
+        padding: 1rem;
+
+        button {
+            background-color: #162A41;
+            color: white;
+            border-radius: 5rem;
+            border: none;
+
+            padding: 0.7rem;
+            font-size: 1rem;
+        }
+
+        h3 {
+            font-size: 0.9rem;
+        }
+
+        p {
+            font-size: 0.8rem;
+        }
+    }
+
+    .info-underline{
+          display: block;
+    height: 0.1rem;
+    background: #D3DEE8;
+    margin: 0.8rem auto;
+    border-radius: 0.1rem;
+    }
+}

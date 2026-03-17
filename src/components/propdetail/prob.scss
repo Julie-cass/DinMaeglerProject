@@ -1,0 +1,223 @@
+.property-image{
+    height: 130%;
+    width: 100%;
+    top: -15rem;
+}
+.property-image-wrapper{
+    overflow: hidden;
+    height: 48rem;
+    position: relative;
+}
+.property-details{
+    margin-top: 2rem;
+    gap: 2rem;
+    display: grid;
+  place-items: center;
+  margin-bottom: 15rem;
+}
+.propertyinnerdetails{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 26rem;
+    align-items: center;
+    place-items: center;
+}
+.all-thedetails{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 6rem; 
+}
+.align-together{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 2rem;
+}
+.lastdescription{
+    margin-top: 4rem;
+    width: 92rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+}
+.icons{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 2rem 2rem 2rem 2rem;
+    gap: 2rem;
+}
+.picicon_img,.picicon_layers{
+    font-size: 48px;
+    color: #8f8f8f;
+    
+}
+.picicon_pin{
+    font-size: 40px;
+    color: #8f8f8f;
+}
+.prop-fav-btn{
+    font-size: 40px;
+    color: #8f8f8f;
+    background-color: #fff;
+    border: none;
+}
+.piciconbtn{
+    background-color: #fff;
+    border: none;
+}
+.prop-fav-btn:hover,
+.piciconbtn:hover .picicon_img,
+.piciconbtn:hover .picicon_layers,
+.piciconbtn:hover .picicon_pin{
+    color: #53575b;
+    cursor: pointer;
+}
+
+.property-description {
+  line-height: 2.2;
+  width: 90%;
+  
+}
+
+.property-description p {
+  margin-bottom: 1.5rem;
+  word-spacing: 0.1em;
+}
+
+hr{
+    width: 80%;
+    border: 0.5px solid #d3d9dd;
+}
+
+.gallery-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+/* Gallery modal — no internal padding so image/iframe fills the modal */
+.gallery-modal {
+  background: transparent; /* let the image/iframe be visible edge-to-edge */
+  border-radius: 6px;
+  max-height: 90vh;
+  overflow: visible; /* allow close button to sit over the image */
+  box-shadow: none; /* remove outer box so overlay handles dimming */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+
+.gallery-content {
+  width: 90vw;
+  max-width: 1000px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Make images fill the modal area and be the visible "frame" */
+.gallery-grid {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 3px;
+}
+
+
+.gallery-map-iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 6px;
+  display: block;
+}
+
+.gallery-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  font-size: 1.15rem;
+  cursor: pointer;
+  z-index: 100;
+}
+
+/* Slight hover effect */
+.gallery-close:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* ensure overlay still covers full screen */
+.gallery-modal-overlay {
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.gallery-icons .picicon_img,
+.gallery-icons .picicon_layers,
+.gallery-icons .picicon_pin {
+  font-size: 36px;
+  color: #e6e6e6;
+}
+
+.gallery-icons .piciconbtn {
+  background: transparent;
+  border: none;
+}
+
+.gallery-icons .prop-fav-btn {
+  font-size: 36px;
+  color: #e6e6e6;
+  background: transparent;
+  border: none;
+}
+
+.gallery-icons .piciconbtn:hover .picicon_img,
+.gallery-icons .piciconbtn:hover .picicon_layers,
+.gallery-icons .piciconbtn:hover .picicon_pin,
+.gallery-icons .prop-fav-btn:hover {
+  color: #ffffff;
+  cursor: pointer;
+}
+
